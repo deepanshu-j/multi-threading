@@ -37,6 +37,9 @@ void solve(){
     cout<<"Thread id t2: "<<t2.get_id()<<"\n";
     
     
+    //This will be printed in the Last for sure and not in somewhere between because//
+    //the main thread will wait for the t1 to finish and then t2 to finish and then t1 ...so on //
+    //till both arent finished and then this will be executed//
     cout<<"The Text at the last of the Program\n";
     system("pause>nul");
 }
@@ -73,5 +76,6 @@ Thread id t1: 23252564117248
 Thread id t2: 23252562016000
 #Thread id t2: thread::id of a non-executing thread
 The Text at the last of the Program
+
 
 */
