@@ -35,7 +35,7 @@ void solve(){
     t1.join();
     
     
-    // t1.detach();// t1.detach() // dont wait for worker thread t1//
+    // t1.detach();// t1.detach() -> dont wait for worker thread t1//
     
 }
 int main() {
